@@ -32,3 +32,17 @@ def saludar_nombre_apellido_predeterminado(nombre="Rafael", apellido="Moreno"):
 
 print(saludar_nombre_apellido_predeterminado())
 print(saludar_nombre_apellido_predeterminado("Carlos"))
+
+#Funcion con argumnetos y argumentos
+def retorno_args_greet(nombre, apellido):
+    return f"Hola {nombre} {apellido}!"
+
+print(retorno_args_greet("Rafael", "Moreno"))
+
+#Con retorno de varios valores
+def multiples_valores():
+    return "rafael", "moreno"
+
+nombre, apellido = multiples_valores()
+print(nombre)
+print(apellido)
