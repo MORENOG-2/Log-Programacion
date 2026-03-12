@@ -56,3 +56,5 @@ a = [1, 2, 3]
 b = a
 print(a is b) # True
 
+# Operadores de pertenencia
+frutas = ["manzana", "banana", "naranja"]
