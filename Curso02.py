@@ -46,3 +46,17 @@ def multiples_valores():
 nombre, apellido = multiples_valores()
 print(nombre)
 print(apellido)
+
+# Con un numero variable de argumentos
+def variable_args(*nombre):
+    for nombre in nombre:
+        print(f"Hola {nombre}, bienvenido a la programación")
+
+variable_args("Rafael", "Carlos", "Ana")
+
+# Con un numero variable de argumentos con clave
+def variable_args_clave(**nombres):
+    for parame, nombre in nombres.items():
+        print(f"Hola {nombre} ({parame}), bienvenido a la programación")
+
+variable_args_clave(lenguaje="Python", nombre="Rafael", apellido="Moreno", edad = 26)
