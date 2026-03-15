@@ -1,4 +1,4 @@
-print("Como estan amigos, bienvenidos a la programación")
+print("Como estan amigos, hoy vamos a aprender sobre operadores de comparación")
 
 if 5 < 3:
     print("5 es menor que 3")
