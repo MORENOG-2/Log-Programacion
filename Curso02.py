@@ -60,3 +60,19 @@ def variable_args_clave(**nombres):
         print(f"Hola {nombre} ({parame}), bienvenido a la programación")
 
 variable_args_clave(lenguaje="Python", nombre="Rafael", apellido="Moreno", edad = 26)
+
+#funciones dentro de funciones
+def funcion_externa():
+    print("Esta es la función externa")
+
+    def funcion_interna():
+        print("Esta es la función interna")
+
+    funcion_interna()
+funcion_externa()
+
+#funiones de lenguaje
+
+print(len("Hola mundo"))
+print(type(25))
+print("Moreno".upper())
