@@ -76,3 +76,14 @@ funcion_externa()
 print(len("Hola mundo"))
 print(type(25))
 print("Moreno".upper())
+
+
+# variables globales y locales
+variable_global = "Soy una variable global"
+
+def funcion_ejemplo():
+    variable_local = "Soy una variable local"
+    print(variable_global)
+    print(variable_local)
+
+funcion_ejemplo()
