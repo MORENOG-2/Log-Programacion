@@ -87,3 +87,5 @@ def funcion_ejemplo():
     print(variable_local)
 
 funcion_ejemplo()
+
+print("Hola soy rafael moreno")
