@@ -88,4 +88,16 @@ def funcion_ejemplo():
 
 funcion_ejemplo()
 
-print("Hola soy rafael moreno")
+#Ejercicio Extra
+def print_numeros(texto_1, texto_2) -> int:
+    for numero in range(1, 101):
+        if numero % 3 == 0 and numero % 5 == 0:
+            print(texto_1 + texto_2)
+        elif numero % 3 == 0:
+            print(texto_1)
+        elif numero % 5 == 0:
+            print(texto_2)
+        else:
+            print(numero)
+
+print_numeros("texto_1", "texto_2")
