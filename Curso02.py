@@ -90,6 +90,7 @@ funcion_ejemplo()
 
 #Ejercicio Extra
 def print_numeros(texto_1, texto_2) -> int:
+    count = 0
     for numero in range(1, 101):
         if numero % 3 == 0 and numero % 5 == 0:
             print(texto_1 + texto_2)
@@ -99,5 +100,7 @@ def print_numeros(texto_1, texto_2) -> int:
             print(texto_2)
         else:
             print(numero)
+            count += 1
+    return count
 
-print_numeros("texto_1", "texto_2")
+print(print_numeros("texto_1", "texto_2"))
