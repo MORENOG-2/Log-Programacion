@@ -1,6 +1,7 @@
 # Ejemplo de craciones de todas las estructuras soportadas en python
 
 # Listas
+print("Ejemplo de listas")
 lista = [1, 2, 3, 4, 5]
 print(lista)
 lista.append(6) #Para agregar un elemento a la lista
@@ -15,11 +16,16 @@ lista.sort() #Ordenar la lista
 print(lista)
 
 # Tuplas
-tupla = (1, 2, 3, 4, 5)
-T = tupla, lista
-print(T)
+print("Ejemplo de tuplas")
+tupla = (1, 2, 3, 4, 5) #Las tuplas son inmutables, no se pueden modificar después de su creación
+print(tupla)
+print(tupla[1]) #Acceder a un elemento de la tupla por su índice
+tupla = tuple(sorted(tupla)) #Ordenar la tupla y convertirla de nuevo a tupla
+print(tupla)
+
 
 # Diccionarios
+print("Ejemplo de diccionarios")
 diccionario = {"nombre": "Rafael", "apellido": "Moreno", "edad": 26}
 print(diccionario)
 
