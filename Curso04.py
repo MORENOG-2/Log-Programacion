@@ -72,3 +72,23 @@ print(r4.split()) # Convierte la cadena en una lista de palabras, separando por 
 
 #transformacion de lista a cadena
 print("_".join(r4.split())) # Convierte la lista de palabras en una cadena, uniendo las palabras con un espacio en blanco.
+
+#transformar numerros
+r6 = "3046590696"
+r7 = "3046590696.26"
+print(int(r6)) # Convierte la cadena de numeros en un numero entero.
+print(float(r7)) # Convierte la cadena de numeros en un numero decimal.
+
+#Comprobaciones
+print(r6.isdigit()) # Devuelve True si la cadena contiene solo numeros.
+print(r7.isdigit()) # Devuelve False porque contiene un punto decimal.
+print(r7.isdecimal()) # Devuelve False porque contiene un punto decimal.
+print(r6.isnumeric()) # Devuelve True porque la cadena contiene solo numeros.
+
+#Extra
+print("Ejercicio Extra")
+
+
+#def conatar(palabras1 :str, palabra2 :str):
+    
+    # Palabras Palindromas
