@@ -39,7 +39,15 @@ print(conjunto)
 
 # Diccionarios
 print("Ejemplo de diccionarios")
-diccionario = {"nombre": "Rafael", "apellido": "Moreno", "edad": 26}
+diccionario = {"nombre": "Rafael", 
+               "apellido": "Moreno", 
+               "edad": 26,
+               "ciudad": "Santa Marta",
+               "carrera": "Ingeniería electrónica"} #Los diccionarios son estructuras de datos que almacenan pares de clave-valor
+print(diccionario["edad"]) #Acceder a un valor del diccionario por su clave
+diccionario["email"] = "rafaemore846@gmail.com" #Agregar una nueva pareja de clave-valor al diccionario 
+diccionario["edad"] = 27 #Modificar el valor de una clave existente en el diccionario
+print(diccionario["edad"])
 print(diccionario)
 
 # Conjuntos
