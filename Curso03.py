@@ -23,6 +23,19 @@ print(tupla[1]) #Acceder a un elemento de la tupla por su índice
 tupla = tuple(sorted(tupla)) #Ordenar la tupla y convertirla de nuevo a tupla
 print(tupla)
 
+#Sets
+print("Ejemplo de sets")
+conjunto = {1, 2, 2, 3, 4, 4, 5} #Los sets no permiten elementos duplicados
+print(conjunto)
+conjunto.add(6)  #Agregar un elemento al set
+print(conjunto)
+conjunto.remove(2) #Eliminar un elemento del set
+print(conjunto)
+conjunto.update({7, 8, 9}) #Agregar varios elementos al set
+print(conjunto)
+conjunto.clear() #Eliminar todos los elementos del set 
+print(conjunto)
+
 
 # Diccionarios
 print("Ejemplo de diccionarios")
