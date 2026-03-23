@@ -66,3 +66,52 @@ print(diccionario)
 print("Fin de diccionarios")
 
 
+# Punto Extra
+print("Ejercicio Extra")
+
+print("Agenda de contactos")
+agenda = {} #Crear un diccionario vacío para almacenar los contactos
+while True:
+    opcion = input("""Que desea hacer? 
+                1) Agregar contacto
+                2) Ver contactos
+                3) Actualizar contacto
+                4) Eliminar contacto
+                5) Salir
+                : """)
+    if opcion.lower() == "1":
+        nombre = input("Ingrese el nombre del contacto: ")
+        telefono = input("Ingrese el número de teléfono del contacto: ")
+        agenda[nombre] = telefono #Agregar el contacto al diccionario
+        print("Contacto agregado exitosamente")
+
+    elif opcion.lower() == "2":
+        if len(agenda) == 0:
+            print("No hay contactos en la agenda")
+        else:
+            print("Contactos en la agenda:")
+            for nombre, telefono in agenda.items(): #Iterar sobre los elementos del diccionario para mostrar los contactos
+                print(f"{nombre}: {telefono}")
+
+    elif opcion.lower() == "3":
+        nombre = input("Ingrese el nombre del contacto a actualizar: ")
+        if nombre in agenda:
+            telefono = input("Ingrese el nuevo número de teléfono del contacto: ")
+            agenda[nombre] = telefono #Actualizar el número de teléfono del contacto en el diccionario
+            print("Contacto actualizado exitosamente")
+        else:
+            print("El contacto no existe en la agenda")
+
+    elif opcion.lower() == "4":
+        nombre = input("Ingrese el nombre del contacto a eliminar: ")
+        if nombre in agenda:
+            del agenda[nombre] #Eliminar el contacto del diccionario
+            print("Contacto eliminado exitosamente")
+        else:
+            print("El contacto no existe en la agenda")
+    elif opcion.lower() == "5":
+        print("Saliendo de la agenda de contactos")
+        break
+    else:
+        print("Opción no válida, por favor ingrese una opción del 1 al 5")
+
