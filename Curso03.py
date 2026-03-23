@@ -50,32 +50,20 @@ diccionario["email"] = "rafaemore846@gmail.com" #Agregar una nueva pareja de cla
 diccionario["edad"] = "27" #Modificar el valor de una clave existente en el diccionario
 print(diccionario["edad"])
 print(diccionario)
-
 diccionario.keys() #Obtener una lista de las claves del diccionario
 print(diccionario.keys())
 diccionario.values() #Obtener una lista de los valores del diccionario
 print(diccionario.values())
-
-
-
 del diccionario["ciudad"] #Eliminar una pareja de clave-valor del diccionario por su clave
 print(diccionario)
 diccionario.pop("apellido") #Eliminar una pareja de clave-valor del diccionario por su clave y devolver su valor
 print(diccionario)
-
-
 diccionario = dict(sorted(diccionario.items())) #Ordenar el diccionario por sus claves y convertirlo de nuevo a diccionario
 print(diccionario)
 
 diccionario.clear() #Eliminar todos los elementos del diccionario
 print(diccionario)
-
-
-
-
-
-
-
+print("Fin de diccionarios")
 
 # Conjuntos
 conjunto = {1, 2, 3, 4, 5}
