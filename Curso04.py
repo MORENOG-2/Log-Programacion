@@ -48,6 +48,7 @@ print(r1.startswith("H")) # True porque Hola empieza con H
 print(r1.endswith("p")) # True porque Hola termina con a
 
 r4 = "Rafael Moreno Guerra"
+r5 = 26
 
 #Busqueda de posicion
 print(r4.find("Moreno")) # Devuelve la posicion de la primera letra Moreno.
@@ -57,3 +58,17 @@ print(r4.lower().find("moreno")) # Devuelve la posicion de la primera letra rafa
 
 #Busqueda de ocurrencias
 print(r4.count("a")) # Devuelve el numero de veces que aparece la letra a.
+print(r4.count("e")) # Devuelve el numero de veces que aparece la letra e.
+
+#Formateo de cadenas
+print("Mi nombre es {} y tengo {} años".format(r4, r5)) # Reemplaza los {} por los valores que se pasan como argumentos a format.
+
+#Interpolacion de cadenas
+print(f"Mi nombre es {r4} y tengo {r5} años") # Reemplaza los {} por los valores de las variables r4 y r5.
+
+#transformacion en lista caracteres y palabras
+print(list(r4)) # Convierte la cadena en una lista de caracteres.
+print(r4.split()) # Convierte la cadena en una lista de palabras, separando por espacios en blanco.
+
+#transformacion de lista a cadena
+print("_".join(r4.split())) # Convierte la lista de palabras en una cadena, uniendo las palabras con un espacio en blanco.
