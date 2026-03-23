@@ -1,9 +1,7 @@
 """
 Operadiores
 """
-
 # Opoeradores aritmeticos
-
 4 + 7 # suma
 4 - 4 # resta
 6 * 8 # multiplicacion
@@ -44,14 +42,16 @@ print(f"not {not True}")
 # Operadores de asignación
 x = 5
 x += 3 # x = x + 3
+print(x)
 x -= 2 # x = x - 2
+print(x)
 x *= 4 # x = x * 4
+print(x)
 x /= 2 # x = x / 2
+print(x)
 x //= 3 # x = x // 3
+print(x)
 x %= 2 # x = x % 2
+print(x)
 x **= 2 # x = x ** 2
-
-# Operadores de identidad
-a = [1, 2, 3]
-b = a
-print(a is b) # True
+print(x)
