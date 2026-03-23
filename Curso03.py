@@ -81,9 +81,12 @@ while True:
                 : """)
     if opcion.lower() == "1":
         nombre = input("Ingrese el nombre del contacto: ")
-        telefono = input("Ingrese el número de teléfono del contacto: ")
-        agenda[nombre] = telefono #Agregar el contacto al diccionario
-        print("Contacto agregado exitosamente")
+        telefono = input("Ingrese el número de teléfono del contacto: ") 
+        if telefono.isdigit() and len(telefono) > 0 and len(telefono) <= 10: 
+            agenda[nombre] = telefono #Agregar el contacto al diccionario
+            print("Contacto agregado exitosamente")
+        else:
+            print("El numero de telefono tiene mas de 10 digitos o no es un numero, por favor ingrese un numero de telefono valido")
 
     elif opcion.lower() == "2":
         if len(agenda) == 0:
@@ -97,10 +100,13 @@ while True:
         nombre = input("Ingrese el nombre del contacto a actualizar: ")
         if nombre in agenda:
             telefono = input("Ingrese el nuevo número de teléfono del contacto: ")
-            agenda[nombre] = telefono #Actualizar el número de teléfono del contacto en el diccionario
-            print("Contacto actualizado exitosamente")
+            if telefono.isdigit() and len(telefono) > 0 and len(telefono) <= 10:
+                agenda[nombre] = telefono #Agregar el contacto al diccionario
+                print("Contacto actualizado exitosamente")
+            else:
+                print("El numero de telefono tiene mas de 10 digitos o no es un numero, por favor ingrese un numero de telefono valido")
         else:
-            print("El contacto no existe en la agenda")
+            print(f"El contacto {nombre} no existe en la agenda")
 
     elif opcion.lower() == "4":
         nombre = input("Ingrese el nombre del contacto a eliminar: ")
@@ -108,7 +114,7 @@ while True:
             del agenda[nombre] #Eliminar el contacto del diccionario
             print("Contacto eliminado exitosamente")
         else:
-            print("El contacto no existe en la agenda")
+            print(f"El contacto {nombre} no existe en la agenda")
     elif opcion.lower() == "5":
         print("Saliendo de la agenda de contactos")
         break
