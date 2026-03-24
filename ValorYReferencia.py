@@ -13,5 +13,28 @@ print(int_b)
 my_list1 = [20, 70]
 my_list2 = my_list1
 my_list2.append(100)
-#print(my_list1)
+print(my_list1)
 print(my_list2)
+
+# Funciones por datos por valor
+
+my_int = 10
+
+def in_int(myint: int):
+    my_int1 = 20
+    print(my_int1)
+
+
+in_int(my_int)
+print(my_int)
+
+# Funciones por datos por referencia
+
+
+def in_list(my_list1: list):
+    my_list1.append(40)
+    print(my_list1)
+
+my_list3 = [10, 20]
+in_list(my_list3)  
+print(my_list3)
