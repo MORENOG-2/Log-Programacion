@@ -90,10 +90,23 @@ print(r6.isnumeric()) # Devuelve True porque la cadena contiene solo numeros.
 print("Ejercicio Extra")
 
 
-def conatar(palabra1 :str, palabra2 :str):
+def contar(palabra1 :str, palabra2 :str):
     
     # Palabras Palindromas
-    print(palabra1)
-    print(palabra2[::-1])
+    print(f"¿ {palabra1} es un palindromo? {palabra1 == palabra1[::-1]}") # Devuelve True si la palabra es igual a su inversa, es decir, si es un palindromo.
+    print(f"¿ {palabra2} es un palindromo? {palabra2 == palabra2[::-1]}") # Devuelve True si la palabra es igual a su inversa, es decir, si es un palindromo.
 
-conatar("radar", "radar")
+    #Palabras Anagramas
+    print(f"¿ {palabra1} y {palabra2} son anagramas? {sorted(palabra1) == sorted(palabra2)}") # Devuelve True si las palabras son anagramas, es decir, si tienen las mismas letras en diferente orden.
+    print(f"¿ {palabra1} y {palabra2} son anagramas? {sorted(palabra1.lower()) == sorted(palabra2.lower())}") # Devuelve True si las palabras son anagramas, es decir, si tienen las mismas letras en diferente orden, sin importar mayusculas o minusculas.
+
+    # Palabras Isogramas
+    print(f"¿ {palabra1} es un isograma? {len(set(palabra1)) == len(palabra1)}") # Devuelve True si la palabra es un isograma, es decir, si no tiene letras repetidas.
+    
+    word_dict = dict()
+    for letter in palabra1:
+        word_dict[letter] = word_dict.get(letter, 0) + 1
+    print(word_dict)
+
+
+contar("radar", "amor")
