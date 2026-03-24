@@ -104,9 +104,18 @@ def contar(palabra1 :str, palabra2 :str):
     print(f"¿ {palabra1} es un isograma? {len(set(palabra1)) == len(palabra1)}") # Devuelve True si la palabra es un isograma, es decir, si no tiene letras repetidas.
     
     word_dict = dict()
-    for letter in palabra1:
+    for letter in palabra2:
         word_dict[letter] = word_dict.get(letter, 0) + 1
-    print(word_dict)
+
+    isogram = True
+    evalue = list(word_dict.values())
+    isogram_len = word_dict
+    for word_count in word_dict.values():
+        if word_count != isogram_len:
+            isogram = False
+            break
+
+    print(isogram)
 
 
 contar("radar", "amor")
