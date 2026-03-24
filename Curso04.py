@@ -1,6 +1,7 @@
 """
 Operaciones
 """
+
 r1 = "Hola"
 r2 = "Mundo"
 
@@ -89,6 +90,10 @@ print(r6.isnumeric()) # Devuelve True porque la cadena contiene solo numeros.
 print("Ejercicio Extra")
 
 
-#def conatar(palabras1 :str, palabra2 :str):
+def conatar(palabra1 :str, palabra2 :str):
     
     # Palabras Palindromas
+    print(palabra1)
+    print(palabra2[::-1])
+
+conatar("radar", "radar")
