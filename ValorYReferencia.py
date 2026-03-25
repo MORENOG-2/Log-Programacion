@@ -32,8 +32,13 @@ print(my_int)
 
 
 def in_list(my_list1: list):
-    my_list1.append(40)
+    my_list1.append(30)
+
+    my_list4 = my_list1
+    my_list4.append(40)
+
     print(my_list1)
+    print(my_list4)
 
 my_list3 = [10, 20]
 in_list(my_list3)  
